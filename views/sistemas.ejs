@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escalas por Sistemas</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Escalas de Rehabilitación - Sistemas</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/">Inicio</a></li>
+      <li><a href="/a-z">A-Z</a></li>
+      <li><a href="/utilidad">Utilidad</a></li>
+      <li><a href="/contacto">Contacto</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Listado de Escalas por Sistema</h2>
+    <ul>
+      <% escalas.forEach(escala => { %>
+        <li><strong><%= escala.nombre %></strong> - <%= escala.sistema %> - <%= escala.descripcion %></li>
+      <% }); %>
+    </ul>
+  </main>
+</body>
+</html>
